@@ -1,0 +1,49 @@
+.app-container {
+  position: fixed;
+  text-align: left;
+  left: 50%;
+  top: 1rem;
+  transform: translate(-50%);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem;
+  height: calc(100% - 4rem);
+  width: calc(100% - 4rem);
+}
+.search-field {
+  margin-right: 1rem;
+  height: 100%;
+  overflow: hidden;
+  display: grid;
+  /* border: 1px solid #aaa; */
+  grid-template-rows: 2.4rem 2rem auto;
+}
+.search-field input {
+  border: 2px solid #aaa;
+}
+.search-field .search-input-label {
+  padding: 0.4rem 0.4rem 0.4rem 0;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.search-field .colleges-list {
+  margin: 0.4rem 0;
+  overflow-y: scroll;
+}
+.search-field .colleges-list .list-item {
+  border-radius: 2px;
+  padding: 0.4rem;
+  margin: 0;
+}
+.active {
+  background: #eee;
+}
+.search-field input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.4rem;
+}
+.map-container {
+  border-color: transparent;
+}
